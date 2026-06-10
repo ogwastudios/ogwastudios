@@ -1,212 +1,158 @@
 import { motion } from 'motion/react';
-import { Play, ArrowRight, Video, Sparkles, Film, Compass, Mic } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { PageTransition } from '../components/PageTransition';
-import React, { useState } from 'react';
+import React from 'react';
+import ogwaHomeImage from '../assets/images/ogwa_home_image_1781109087210.png';
+import rainbowChristmasPoster from '../assets/images/rainbow_christmas_poster_1781109101391.png';
 
 export const Home = () => {
-  const [isPlaying, setIsPlaying] = useState(false);
-
   return (
     <PageTransition>
-      <section className="relative min-h-screen flex flex-col items-center justify-center pt-24 pb-20 bg-surface">
+      <section className="relative min-h-screen flex flex-col items-center justify-center pt-16 pb-20 overflow-hidden bg-black">
+        {/* Cinematic Backdrop Glow */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[600px] bg-radial from-[#EBC325]/5 via-transparent to-transparent pointer-events-none"></div>
+
         {/* Hero Section */}
-        <div className="container mx-auto px-6 max-w-6xl z-10 text-center mb-16">
+        <div className="container mx-auto px-6 max-w-6xl z-10 text-center mb-16 pt-12">
           <motion.div 
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
             className="flex items-center justify-center gap-4 mb-6"
           >
-            <span className="h-[1px] w-8 bg-primary"></span>
-            <span className="text-[10px] md:text-xs font-bold text-primary uppercase tracking-[0.4em] italic">
-              OGWA Studios
+            <span className="h-[1px] w-8 bg-[#EBC325]/40"></span>
+            <span className="text-[10px] md:text-xs font-bold text-[#EBC325] uppercase tracking-[0.4em]">
+              The future of African storytelling
             </span>
-            <span className="h-[1px] w-8 bg-primary"></span>
+            <span className="h-[1px] w-8 bg-[#EBC325]/40"></span>
           </motion.div>
 
           <motion.h1 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="text-5xl md:text-8xl lg:text-[7.5rem] font-light leading-[1] text-navy mb-10 tracking-tight"
+            transition={{ delay: 0.1, duration: 0.8 }}
+            className="text-4xl md:text-7xl lg:text-[7.5rem] font-light leading-[1.05] text-white mb-8 tracking-tighter"
           >
-            Authentic stories, <br />
-            <span className="font-serif italic font-light text-primary">boldly told.</span>
+            Authentic stories,<br />
+            <span className="font-light text-[#EBC325]">boldly told.</span>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.3 }}
-            className="text-lg md:text-xl text-slate max-w-3xl mx-auto mb-12 leading-relaxed"
+            transition={{ delay: 0.3, duration: 0.8 }}
+            className="text-base md:text-lg text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed"
           >
-            We create emotionally powerful films, series, and media that challenge narratives, amplify underrepresented voices, and leave lasting impact.
+            Crafting powerful stories that challenge perspectives, celebrate diversity, and leave lasting impact.
           </motion.p>
 
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-6"
+            className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             <Link to="/projects" className="btn-primary flex items-center gap-3">
               Watch Our Work
               <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link to="/contact" className="btn-outline">
-              Partner With Us
+            <Link to="/about" className="btn-outline">
+              More on About
             </Link>
           </motion.div>
         </div>
 
-        {/* Video Placeholder Component */}
-        <div className="container mx-auto px-6 max-w-5xl mb-28">
+        {/* Featured Film Frame Placeholder using home image */}
+        <div className="container mx-auto px-6 max-w-5xl mb-24 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.7 }}
-            className="relative aspect-video w-full bg-navy rounded-2xl overflow-hidden shadow-2xl border border-white/10 group"
+            transition={{ delay: 0.5, duration: 0.8 }}
+            className="relative aspect-video w-full bg-neutral-950 rounded-2xl overflow-hidden shadow-[0_0_50px_rgba(0,0,0,0.8)] border border-white/10 group"
           >
-            {!isPlaying ? (
-              <div className="absolute inset-0 w-full h-full">
-                {/* Visual Placeholder image */}
-                <img 
-                  src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&q=80&w=2000" 
-                  alt="Showreel Thumbnail" 
-                  className="w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-105"
-                />
-                
-                {/* Premium Dark Overlay & Play Buttons */}
-                <div className="absolute inset-0 bg-linear-to-t from-navy via-navy/30 to-transparent flex flex-col justify-between p-8 md:p-12">
-                  <div className="flex justify-between items-start">
-                    <span className="bg-primary/20 text-primary border border-primary/30 px-3 py-1 font-mono text-[10px] uppercase tracking-widest rounded">
-                      Featured Showreel
-                    </span>
-                    <span className="text-white/60 font-mono text-xs">2:15</span>
-                  </div>
+            <div className="absolute inset-0 w-full h-full">
+              {/* Visual Placeholder for high quality film imagery */}
+              <img 
+                src={ogwaHomeImage} 
+                alt="OGWA Studios Team Meeting" 
+                referrerPolicy="no-referrer"
+                className="w-full h-full object-cover opacity-70 transition-transform duration-750 group-hover:scale-[1.01]"
+              />
+              
+              {/* Vintage dark film screening layer */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-black/30 flex flex-col justify-between p-6 md:p-10">
+                <div className="flex justify-between items-start">
+                  <span className="bg-[#EBC325]/10 text-[#EBC325] border border-[#EBC325]/30 px-3 py-1 font-mono text-[9px] uppercase tracking-widest rounded-xs">
+                    STUDIO SHOWCASE
+                  </span>
+                  <span className="text-[#EBC325] font-mono text-xs tracking-widest bg-black/60 px-2 py-1 rounded-sm">OGWA STUDIOS</span>
+                </div>
 
-                  <div className="flex flex-col items-center">
-                    <button 
-                      onClick={() => setIsPlaying(true)}
-                      className="w-20 h-20 bg-primary hover:bg-primary-hover text-navy rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 active:scale-95 shadow-xl shadow-primary/30 cursor-pointer"
-                    >
-                      <Play className="w-8 h-8 fill-navy ml-1 text-navy" />
-                    </button>
-                    <p className="text-white font-display uppercase tracking-widest text-xs mt-4 font-bold">
-                      Play Launch Film
-                    </p>
-                  </div>
-
-                  <div className="text-left">
-                    <h3 className="text-white text-lg md:text-2xl font-bold uppercase tracking-tight">
-                      OGWA Studios — Re-defining African Cinema
-                    </h3>
-                    <p className="text-white/60 text-xs md:text-sm mt-1">
-                      A visual journey highlighting stories designed to shift culture and drive impact.
-                    </p>
-                  </div>
+                <div className="text-left max-w-xl mt-auto">
+                  <h3 className="text-white text-lg md:text-2xl font-bold uppercase tracking-tight">
+                    OGWA Studios — Storytelling Redefined  
+                  </h3>
+                  <p className="text-gray-300 text-xs md:text-sm mt-1 leading-relaxed">
+                    Inside the creative domain of Original Gripping Works of Art. Empowering voices that shift cultures.
+                  </p>
                 </div>
               </div>
-            ) : (
-              <div className="absolute inset-0 w-full h-full bg-black flex items-center justify-center">
-                {/* Embedded Responsive Map/Media representation - we use a highly stylized cinematic loop or custom responsive video iframe simulation */}
-                <iframe 
-                  width="100%" 
-                  height="100%" 
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1" 
-                  title="OGWA Studios Showcase" 
-                  frameBorder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                  allowFullScreen
-                  className="w-full h-full"
-                ></iframe>
-                <button 
-                  onClick={() => setIsPlaying(false)}
-                  className="absolute top-6 right-6 bg-white/10 hover:bg-white/20 text-white font-mono text-xs px-3 py-1.5 rounded-full uppercase tracking-wider backdrop-blur-md transition-all active:scale-95"
-                >
-                  Exit Preview
-                </button>
-              </div>
-            )}
+            </div>
           </motion.div>
         </div>
 
-        {/* Structured "What We Do" Grid */}
-        <div className="container mx-auto px-6 max-w-6xl mb-28">
-          <div className="border-t border-gray-200 pt-16 mb-16 text-center md:text-left">
-            <span className="text-primary font-mono text-xs font-bold tracking-[0.2em] mb-4 block">SERVICES</span>
-            <h2 className="text-4xl md:text-6xl uppercase font-light tracking-tighter">
-              What <span className="font-bold">We Do</span>
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-            {[
-              { title: "Film & TV Production", icon: <Film className="w-6 h-6" />, desc: "High-caliber cinema from screenwriting to direct final master cut." },
-              { title: "Story Development", icon: <Sparkles className="w-6 h-6" />, desc: "Fleshing out raw insights and oral histories into narrative frameworks." },
-              { title: "Creative Direction", icon: <Compass className="w-6 h-6" />, desc: "Establishing deep artistic tones, frames, and styling boundaries for screen." },
-              { title: "Branded Storytelling", icon: <Video className="w-6 h-6" />, desc: "Designing compelling stories for forward thinking socially-aware brands." },
-              { title: "Cultural Campaigns", icon: <Mic className="w-6 h-6" />, desc: "Mobilizing public awareness and social impacts through tailored media releases." }
-            ].map((item, idx) => (
-              <div key={idx} className="bg-white p-6 rounded-xl border border-gray-100 hover:border-primary/40 transition-all group flex flex-col justify-between">
-                <div>
-                  <div className="w-12 h-12 bg-primary/10 text-primary rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-navy transition-colors">
-                    {item.icon}
-                  </div>
-                  <h3 className="font-bold tracking-tight text-navy uppercase text-sm mb-3">{item.title}</h3>
-                  <p className="text-xs text-gray-500 leading-relaxed">{item.desc}</p>
-                </div>
-                <div className="text-primary font-mono text-[10px] font-bold mt-6">0{idx + 1}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Home page preview for Featured Projects */}
+        {/* Selected Featured Works grid teaser */}
         <div className="container mx-auto px-6 max-w-6xl">
-          <div className="border-t border-gray-200 pt-16 mb-16 flex flex-col md:flex-row justify-between items-end gap-6">
-            <div className="text-left">
-              <span className="text-primary font-mono text-xs font-bold tracking-[0.2em] mb-4 block">SELECTIONS</span>
-              <h2 className="text-4xl md:text-6xl uppercase font-light tracking-tighter text-navy">
-                Featured <span className="font-bold">Projects</span>
+          <div className="border-t border-white/10 pt-16 mb-16 flex flex-col md:flex-row justify-between items-end gap-6 text-left">
+            <div>
+              <span className="text-[#EBC325] font-mono text-xs font-bold tracking-[0.2em] mb-3 block">CINEMATIC PREVIEWS</span>
+              <h2 className="text-3xl md:text-5xl uppercase font-light tracking-tighter text-white">
+                Stories <span className="font-bold text-[#EBC325]">In Focus</span>
               </h2>
             </div>
-            <Link to="/projects" className="btn-outline inline-flex items-center gap-2">
-              Browse Work
+            <Link to="/projects" className="btn-outline inline-flex items-center gap-2 py-3 px-6 text-xs">
+              View All Works
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: "The Sun’s Glory",
-                desc: "A bold film spotlighting albinism awareness, celebrating resilience and representation.",
-                image: "https://images.unsplash.com/photo-1492691523567-6170c3295db5?auto=format&fit=crop&q=80&w=800",
-                tag: "Feature Film"
+                title: "The Sun's Glory",
+                tag: "Social Impact Film",
+                desc: "A bold film exploring identity, visibility, and the lived realities of people with albinism.",
+                image: "https://images.unsplash.com/photo-1492691523567-6170c3295db5?auto=format&fit=crop&q=80&w=800"
               },
               {
                 title: "A Rainbow for Christmas",
-                desc: "A gripping and beautiful story of identity, courage, and unconditional love.",
-                image: "https://images.unsplash.com/photo-1542204172-5a3d76e7774e?auto=format&fit=crop&q=80&w=800",
-                tag: "Short Narrative"
+                tag: "Narrative Short",
+                desc: "A story of identity, courage, family, and acceptance set against the backdrop of Christmas Eve.",
+                image: rainbowChristmasPoster
               },
               {
                 title: "SYV Podcast",
-                desc: "Nigeria’s pioneering podcast series focused entirely on albinism, history, and raw narrative.",
-                image: "https://images.unsplash.com/photo-1485579149621-3123dd979885?auto=format&fit=crop&q=80&w=800",
-                tag: "Digital Podcast"
+                tag: "Ongoing Audio Series",
+                desc: "Nigeria's pioneering podcast dedicated to conversations around representation, identity, and lived experiences.",
+                image: "https://images.unsplash.com/photo-1485579149621-3123dd979885?auto=format&fit=crop&q=80&w=800"
               }
-            ].map((p, idx) => (
-              <div key={idx} className="group relative overflow-hidden rounded-xl border border-gray-100 bg-white shadow-xs p-4 flex flex-col gap-4">
-                <div className="aspect-video w-full rounded-lg overflow-hidden bg-gray-100">
-                  <img src={p.image} alt={p.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+            ].map((work, idx) => (
+              <div 
+                key={idx} 
+                className="group relative overflow-hidden rounded-xl border border-white/5 bg-[#0a0a0a]/80 p-4 hover:border-[#EBC325]/30 hover:-translate-y-1 transition-all duration-300 text-left"
+              >
+                <div className="aspect-video w-full rounded-lg overflow-hidden bg-zinc-950 mb-4 border border-white/5">
+                  <img 
+                    src={work.image} 
+                    alt={work.title} 
+                    referrerPolicy="no-referrer"
+                    className="w-full h-full object-cover grayscale brightness-90 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500" 
+                  />
                 </div>
-                <div className="text-left">
-                  <span className="text-[10px] font-bold text-primary uppercase tracking-widest">{p.tag}</span>
-                  <h3 className="text-lg font-bold text-navy uppercase tracking-tight mt-1 mb-2">{p.title}</h3>
-                  <p className="text-xs text-gray-500 leading-relaxed">{p.desc}</p>
+                <div className="space-y-1">
+                  <span className="text-[9px] font-bold text-[#EBC325] uppercase tracking-widest">{work.tag}</span>
+                  <h3 className="text-lg font-bold text-white uppercase tracking-tight group-hover:text-[#EBC325] transition-colors">{work.title}</h3>
+                  <p className="text-xs text-gray-500 leading-relaxed pt-1">{work.desc}</p>
                 </div>
               </div>
             ))}

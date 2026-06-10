@@ -1,83 +1,124 @@
 import { PageTransition } from '../components/PageTransition';
-import { Globe, Heart, Gift, BookOpen, ArrowRight } from 'lucide-react';
+import { BookOpen, Users, Award, ShieldAlert, Heart, Calendar } from 'lucide-react';
+import { Link } from 'react-router-dom';
+
+const impactFramework = [
+  {
+    title: "ADVOCACY & AWARENESS",
+    desc: "We develop films, campaigns, and educational media that challenge harmful stereotypes, amplify underrepresented voices, and promote greater understanding around issues affecting marginalized communities.",
+    icon: <ShieldAlert className="w-6 h-6 text-[#EBC325]" />
+  },
+  {
+    title: "COMMUNITY ENGAGEMENT",
+    desc: "We bring stories directly to the people through screenings, conversations, workshops, community gatherings, and grassroots activations designed to foster dialogue and collective action.",
+    icon: <Users className="w-6 h-6 text-[#EBC325]" />
+  },
+  {
+    title: "IMPACT STORYTELLING",
+    desc: "We collaborate with filmmakers, advocates, organizations, and cultural leaders to create storytelling initiatives that inspire awareness, strengthen representation, and drive measurable social impact.",
+    icon: <BookOpen className="w-6 h-6 text-[#EBC325]" />
+  }
+];
 
 export const Foundation = () => {
   return (
     <PageTransition>
-      <section className="py-32 bg-white min-h-screen">
-        <div className="container mx-auto px-6 max-w-6xl text-left">
+      <section className="py-28 bg-[#050505] min-h-screen relative overflow-hidden">
+        {/* Glow Element */}
+        <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-radial from-[#EBC325]/5 to-transparent pointer-events-none rounded-full blur-3xl"></div>
+
+        <div className="container mx-auto px-6 max-w-6xl relative z-10">
           
-          {/* Header Area */}
-          <div className="max-w-3xl mb-20">
+          {/* Header Area using custom plain display sans-serif typography */}
+          <div className="max-w-4xl mb-16 text-left">
             <div className="flex items-center gap-2 mb-6">
-              <span className="w-8 h-[1px] bg-primary"></span>
-              <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-primary">PHILANTHROPY & SYSTEM IMPACT</span>
+              <span className="w-8 h-[1px] bg-[#EBC325]"></span>
+              <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#EBC325]">NON-PROFIT INITIATIVE</span>
             </div>
-            <h1 className="text-5xl md:text-7xl font-light uppercase tracking-tighter text-navy mb-8 leading-none">
-              The OGWA <br />
-              <span className="font-bold font-serif italic text-primary">Foundation.</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-sans font-light uppercase tracking-tighter text-white mb-8 leading-none">
+              THE <span className="font-sans font-light text-[#EBC325]">OGWA FOUNDATION.</span>
             </h1>
-            <p className="text-lg md:text-xl text-slate font-light leading-relaxed">
-              Established on the belief that cinematic storytelling is a powerful tool to drive inclusive representation, empower communities, and combat myths and prejudice.
-            </p>
           </div>
 
-          {/* Core Vision Quote Indicator */}
-          <div className="border-l-4 border-primary pl-8 py-4 mb-20 max-w-4xl bg-surface/40 pr-6 rounded-r-xl">
-            <p className="text-xl text-navy font-semibold font-serif italic leading-relaxed">
-              "We provide physical/digital platforms, technical equipment, and professional access to empower individuals at the margins of society to lead their own stories."
-            </p>
+          {/* Central Philosophy Block */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-24 items-center text-left">
+            <div className="space-y-6 text-gray-300 text-sm md:text-base leading-relaxed">
+              <p className="border-l-2 border-[#EBC325] pl-6 py-1 text-base text-white font-normal">
+                Founded on the belief that storytelling can move culture, challenge prejudice, and inspire meaningful action, the OGWA Foundation uses film, media, and community engagement to advance representation, awareness, and social impact.
+              </p>
+              <p>
+                We do not simply create stories. We build impact-driven campaigns that connect audiences to real conversations, real communities, and real change.
+              </p>
+            </div>
+            
+            <div className="relative aspect-video rounded-2xl overflow-hidden bg-[#0e0e0e] border border-white/5 group">
+              <img 
+                src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&q=80&w=1200" 
+                alt="OGWA Foundation Community screening" 
+                referrerPolicy="no-referrer"
+                className="w-full h-full object-cover opacity-50 grayscale transition-transform duration-500 group-hover:scale-102 group-hover:grayscale-0 group-hover:opacity-75"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+            </div>
           </div>
 
-          {/* Pillars of Action Grid */}
-          <div className="mb-24">
-            <h2 className="text-2xl font-bold uppercase tracking-tight text-navy mb-12 flex items-center gap-2">
-              <span>Our Frameworks of Support</span>
-              <span className="h-[1px] flex-1 bg-gray-200"></span>
-            </h2>
+          {/* Our Impact Framework */}
+          <div className="border-t border-white/10 pt-20 mb-24">
+            <div className="mb-14 text-left">
+              <span className="text-[#EBC325] font-mono text-xs font-bold tracking-[0.2em] mb-3 block">OPERATING STANDARD</span>
+              <h2 className="text-3xl md:text-4xl font-sans uppercase font-light tracking-tighter text-white">
+                OUR IMPACT <span className="font-sans font-light text-[#EBC325]">FRAMEWORK</span>
+              </h2>
+            </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-              {[
-                {
-                  title: "Advocacy & Awareness",
-                  desc: "Partnering with global organizations to design films, campaigns, and media that dismantle negative stigmas surrounding albinism and bodily differences.",
-                  icon: <Heart className="w-6 h-6 text-primary" />
-                },
-                {
-                  title: "Equipment & Media Grants",
-                  desc: "Providing camera rigs, sound gear, and active studio spaces to grassroots documentary and podcast makers across the African continent.",
-                  icon: <Gift className="w-6 h-6 text-primary" />
-                },
-                {
-                  title: "Hands-on Mentorship",
-                  desc: "Connecting local, emerging and underrepresented screenwriters and TV content creators with industry mentors to bring their projects to life.",
-                  icon: <BookOpen className="w-6 h-6 text-primary" />
-                }
-              ].map((p, idx) => (
-                <div key={idx} className="bg-surface p-8 rounded-2xl border border-gray-100 hover:border-primary/44 transition-colors">
-                  <div className="w-12 h-12 bg-white rounded-xl shadow-xs flex items-center justify-center mb-6">
-                    {p.icon}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+              {impactFramework.map((framework, idx) => (
+                <div 
+                  key={idx}
+                  className="bg-[#0e0e0e] border border-white/5 p-8 rounded-2xl hover:border-[#EBC325]/30 transition-all duration-300"
+                >
+                  <div className="w-12 h-12 bg-[#EBC325]/10 rounded-xl flex items-center justify-center mb-6">
+                    {framework.icon}
                   </div>
-                  <h3 className="text-lg font-bold text-navy uppercase tracking-tight mb-3">{p.title}</h3>
-                  <p className="text-xs text-gray-500 leading-relaxed mb-6">{p.desc}</p>
-                  <span className="text-[10px] font-bold text-primary uppercase tracking-widest font-mono">Pillar 0{idx + 1}</span>
+                  <h3 className="text-lg font-bold text-white uppercase tracking-tight mb-4 group-hover:text-[#EBC325] transition-colors leading-tight">
+                    {framework.title}
+                  </h3>
+                  <p className="text-xs md:text-sm text-gray-400 leading-relaxed">
+                    {framework.desc}
+                  </p>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Bottom Action Card */}
-          <div className="bg-surface p-12 rounded-3xl border border-gray-100 flex flex-col md:flex-row justify-between items-center gap-8">
-            <div className="text-left max-w-xl">
-              <h3 className="text-2xl font-bold uppercase tracking-tight text-navy mb-2">Want to partner with the Foundation?</h3>
-              <p className="text-xs text-gray-500 leading-relaxed">
-                We work directly with Non-Governmental Organizations (NGOs), inclusive development frameworks, and private contributors to expand media resources. Contact us directly at <span className="font-semibold text-primary">ogwatvmedia@gmail.com</span> to get involved.
-              </p>
+          {/* Option to Call to Action Partner with the Foundation */}
+          <div className="bg-[#0e0e0e] rounded-3xl p-10 md:p-14 text-left border border-white/5 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-radial from-[#EBC325]/10 to-transparent blur-xl pointer-events-none"></div>
+            
+            <div className="relative z-10 max-w-4xl">
+              <span className="text-xs font-mono font-bold text-[#EBC325] uppercase tracking-widest mb-3 block">BUILD ALLIANCE</span>
+              <h3 className="text-2xl md:text-3xl font-bold uppercase text-white mb-6">
+                PARTNER WITH THE FOUNDATION
+              </h3>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start mb-8 text-gray-400 text-xs md:text-sm leading-relaxed">
+                <p>
+                  We work alongside NGOs, community organizations, institutions, brands, and philanthropic partners who believe in the power of storytelling as a catalyst for change.
+                </p>
+                <p>
+                  Together, we create campaigns, experiences, and conversations that extend beyond the screen and into communities.
+                </p>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <Link to="/contact" className="btn-primary text-center px-8 py-4">
+                  Partner with the Foundation
+                </Link>
+                <Link to="/contact" className="btn-outline text-center px-8 py-4">
+                  E-mail Representative
+                </Link>
+              </div>
             </div>
-            <a href="mailto:ogwatvmedia@gmail.com" className="btn-primary shrink-0 inline-flex items-center gap-2">
-              Get Involved
-              <ArrowRight className="w-4 h-4" />
-            </a>
           </div>
 
         </div>

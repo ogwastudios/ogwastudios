@@ -5,8 +5,9 @@ import { Home } from './pages/Home';
 import { About } from './pages/About';
 import { Projects } from './pages/Projects';
 import { Services } from './pages/Services';
-import { Experiences } from './pages/Experiences';
+import { Impact } from './pages/Impact';
 import { Foundation } from './pages/Foundation';
+import { Stories } from './pages/Stories';
 import { Partners } from './pages/Partners';
 import { Contact } from './pages/Contact';
 
@@ -17,19 +18,20 @@ function AnimatedRoutes() {
     <AnimatePresence mode="wait">
       <motion.div
         key={location.pathname}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.15 }}
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -10 }}
+        transition={{ duration: 0.25 }}
         className="w-full"
       >
         <Routes location={location}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/experiences" element={<Experiences />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/impact" element={<Impact />} />
           <Route path="/foundation" element={<Foundation />} />
+          <Route path="/stories" element={<Stories />} />
           <Route path="/partners" element={<Partners />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

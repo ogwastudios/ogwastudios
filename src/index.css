@@ -9,13 +9,13 @@
 
   /* Primary Yellow */
   --color-primary: #EBC325;
-  --color-primary-hover: #D4AF21;
+  --color-primary-hover: #FADA5E;
   
-  /* Deep Navy / Slate */
-  --color-navy: #1A2B3C;
-  --color-navy-light: #2A3B4C;
-  --color-slate: #64748B;
-  --color-surface: #F9FAFB;
+  /* Deep cinematic dark colors, swapping labels so existing color patterns render beautifully */
+  --color-navy: #FFFFFF;
+  --color-navy-light: #F3F4F6;
+  --color-slate: #94A3B8;
+  --color-surface: #0E0E0E;
 }
 
 @layer base {
@@ -24,27 +24,38 @@
   }
   
   body {
-    @apply font-sans bg-surface text-navy antialiased;
+    @apply font-sans bg-[#050505] text-[#94A3B8] antialiased min-h-screen relative overflow-x-hidden;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @apply font-display tracking-tight text-navy;
+    @apply font-display tracking-tight text-white;
   }
 }
 
 /* Custom Utilities */
 .glass {
-  @apply backdrop-blur-md bg-white border border-gray-200;
+  @apply backdrop-blur-xl bg-black/80 border-b border-white/10;
 }
 
 .btn-primary {
-  @apply bg-primary text-navy px-8 py-4 font-bold text-sm tracking-widest uppercase transition-all hover:shadow-xl hover:scale-[1.02] active:scale-95;
+  @apply bg-[#EBC325] text-black px-8 py-4 font-bold text-sm tracking-widest uppercase transition-all hover:bg-[#FADA5E] hover:shadow-[0_0_20px_rgba(235,195,37,0.3)] hover:scale-[1.02] active:scale-95 duration-300;
 }
 
 .btn-outline {
-  @apply border border-gray-300 bg-white text-navy px-8 py-4 font-bold text-sm tracking-widest uppercase transition-all hover:bg-gray-50 active:scale-95;
+  @apply border border-[#EBC325]/80 bg-transparent text-[#EBC325] px-8 py-4 font-bold text-sm tracking-widest uppercase transition-all hover:bg-[#EBC325] hover:text-black hover:shadow-[0_0_15px_rgba(235,195,37,0.25)] active:scale-95 duration-300;
 }
 
 .text-gradient {
-  @apply bg-clip-text text-transparent bg-linear-to-r from-navy to-slate;
+  @apply bg-clip-text text-transparent bg-linear-to-r from-white via-[#EBC325] to-[#A0AEC0];
 }
+
+/* Custom authentic background grid/cinematic glow styles */
+.cinematic-bg {
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(235, 195, 37, 0.05) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(235, 195, 37, 0.03) 0%, transparent 50%),
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 64px 64px, 64px 64px;
+}
+

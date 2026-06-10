@@ -1,0 +1,104 @@
+import { PageTransition } from '../components/PageTransition';
+import { ExternalLink, Clock, BookOpen } from 'lucide-react';
+
+const storiesList = [
+  {
+    title: "ZOE: A story of faith, loss, and the many questions we don't always answer inside OGWA Studios",
+    url: "https://rededitmagazine.com/zoe-a-story-of-faith-loss-and-the-questions-we-dont-always-answer-inside-ogwa-studios-zoe/",
+    desc: "A rich dive into the creative choices behind ZOE, exploring lived grief, faith, representation, and the artistic principles guiding contemporary cinema.",
+    readTime: "5 Min Read",
+    tag: "REDEDIT MAGAZINE"
+  },
+  {
+    title: "Beyond the Frame: How Prosper Light and OGWA Studios are Redefining Beauty, Belonging and Bold Storytelling in Nollywood",
+    url: "https://ranksafrica.com/beyond-the-frame-how-prosper-light-and-ogwa-studios-are-redefining-beauty-belonging-and-bold-storytelling-in-nollywood/",
+    desc: "An in-depth profile of visual change makers, unpacking how bold imagery and authentic narratives translate lived truth into high-fidelity Nollywood standard.",
+    readTime: "7 Min Read",
+    tag: "RANKS AFRICA"
+  },
+  {
+    title: "How Actor Prosper Light Built His Own Table and Invited Others In",
+    url: "https://businessday.ng/bd-weekender/article/how-actor-prosper-light-built-his-own-table-and-invited-others-in/",
+    desc: "An exclusive feature on creating collaborative grassroots platforms, securing production access, and driving advocacy work beyond boundaries.",
+    readTime: "6 Min Read",
+    tag: "BUSINESS DAY"
+  }
+];
+
+export const Stories = () => {
+  return (
+    <PageTransition>
+      <section className="py-28 bg-[#050505] min-h-screen relative overflow-hidden">
+        {/* Cinematic glow background */}
+        <div className="absolute top-1/3 left-1/3 w-[500px] h-[500px] bg-radial from-[#EBC325]/5 to-transparent pointer-events-none rounded-full blur-3xl"></div>
+
+        <div className="container mx-auto px-6 max-w-6xl relative z-10">
+          
+          {/* Header Area using custom plain sans-serif headings */}
+          <div className="max-w-4xl mb-20 text-left">
+            <div className="flex items-center gap-2 mb-6">
+              <span className="w-8 h-[1px] bg-[#EBC325]"></span>
+              <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#EBC325]">PRESS RELEASES & FEATURES</span>
+            </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-light uppercase tracking-tighter text-white mb-8 leading-none">
+              EXTERNAL <span className="text-[#EBC325]">STORIES.</span>
+            </h1>
+            <p className="text-base md:text-lg text-gray-400 font-light leading-relaxed max-w-3xl">
+              Read editorial reviews, actor spotlights, and analytical journals outlining the creative core and social vision of OGWA Studios.
+            </p>
+          </div>
+
+          {/* Stories Editorial Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            {storiesList.map((story, idx) => (
+              <article 
+                key={idx}
+                className="group bg-[#0e0e0e] border border-white/5 rounded-2xl p-8 hover:border-[#EBC325]/30 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between text-left"
+              >
+                <div>
+                  <div className="flex justify-between items-center mb-6">
+                    <span className="bg-[#EBC325]/10 text-[#EBC325] px-2.5 py-1 text-[8px] font-mono tracking-widest uppercase rounded">
+                      {story.tag}
+                    </span>
+                    <span className="text-gray-500 font-mono text-[9px] uppercase tracking-wider flex items-center gap-1">
+                      <Clock className="w-3.5 h-3.5" /> {story.readTime}
+                    </span>
+                  </div>
+
+                  <h3 className="text-base font-bold text-white group-hover:text-[#EBC325] transition-colors leading-snug mb-4 uppercase tracking-normal">
+                    {story.title}
+                  </h3>
+
+                  <p className="text-xs text-gray-400 leading-relaxed line-clamp-4">
+                    {story.desc}
+                  </p>
+                </div>
+
+                <div className="border-t border-white/5 pt-6 mt-8">
+                  <a 
+                    href={story.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[10px] font-bold uppercase tracking-widest text-[#EBC325] group-hover:text-white transition-colors flex items-center gap-2 cursor-pointer"
+                  >
+                    Read Full Article
+                    <ExternalLink className="w-3.5 h-3.5" />
+                  </a>
+                </div>
+              </article>
+            ))}
+          </div>
+
+          {/* Bottom Callout */}
+          <div className="rounded-2xl bg-[#0e0e0e]/55 border border-white/5 p-8 text-center max-w-2xl mx-auto">
+            <h4 className="text-xs uppercase tracking-widest font-bold text-white mb-2">PARTNERSHIP ARCHIVE</h4>
+            <p className="text-xs text-gray-500 max-w-md mx-auto leading-relaxed">
+              We continue to document authentic milestones. To request press kits, interviews, or custom publications, use our collaborative outreach channel.
+            </p>
+          </div>
+
+        </div>
+      </section>
+    </PageTransition>
+  );
+};
