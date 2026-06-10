@@ -1,7 +1,7 @@
 import { PageTransition } from '../components/PageTransition';
 import { Play, Film, Calendar, Compass, Sparkles, Tv, ArrowRight } from 'lucide-react';
 import React, { useState } from 'react';
-import zoeMoviePoster from '../assets/images/ZOE.jpg';
+import zoeMoviePoster from '../assets/images/ZOE.JPG';
 import rainbowChristmasPoster from '../assets/images/rfc.jpg';
 import sunsglory from '../assets/images/sgs.jpg';
 
