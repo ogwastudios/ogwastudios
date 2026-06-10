@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from "motion-react";
+import { motion } from "framer-motion";
 import logo from "../assets/images/logo.svg";
 
 export const Logo: React.FC<{ className?: string }> = ({ className }) => {
