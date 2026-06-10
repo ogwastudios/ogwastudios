@@ -3,8 +3,9 @@ import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { PageTransition } from '../components/PageTransition';
 import React from 'react';
-import ogwaHomeImage from '../assets/images/ogwa_home_image_1781109087210.png';
-import rainbowChristmasPoster from '../assets/images/rainbow_christmas_poster_1781109101391.png';
+import ogwaHomeImage from '../assets/images/ogwa_home_mage.jpg';
+import rainbowChristmasPoster from '../assets/images/rfc.jpg';
+import sunsglory from '../assets/images/sgs.jpg';
 
 export const Home = () => {
   return (
@@ -122,7 +123,7 @@ export const Home = () => {
                 title: "The Sun's Glory",
                 tag: "Social Impact Film",
                 desc: "A bold film exploring identity, visibility, and the lived realities of people with albinism.",
-                image: "https://images.unsplash.com/photo-1492691523567-6170c3295db5?auto=format&fit=crop&q=80&w=800"
+                image: sunsglory
               },
               {
                 title: "A Rainbow for Christmas",
