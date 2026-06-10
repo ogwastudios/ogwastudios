@@ -1,8 +1,9 @@
 import { PageTransition } from '../components/PageTransition';
 import { Play, Film, Calendar, Compass, Sparkles, Tv, ArrowRight } from 'lucide-react';
 import React, { useState } from 'react';
-import rainbowChristmasPoster from '../assets/images/rainbow_christmas_poster_1781109101391.png';
-import zoeMoviePoster from '../assets/images/zoe_movie_poster_1781109113254.png';
+import zoeMoviePoster from '../assets/images/rfc.jpg';
+import rainbowChristmasPoster from '../assets/images/rfc.jpg';
+import sunsglory from '../assets/images/sgs.jpg';
 
 // Live project parameters based directly on user's spec
 const ogwaProjects = [
@@ -11,7 +12,7 @@ const ogwaProjects = [
     category: "Social Impact Film",
     year: "2025",
     desc: "A film exploring identity, visibility, and the lived realities of people with albinism. Combines high-fidelity cinematography with advocacy to drive inclusion.",
-    image: "https://images.unsplash.com/photo-1492691523567-6170c3295db5?auto=format&fit=crop&q=80&w=1200",
+    image: sunsglory,
     roles: ["Story Development", "Film Production", "Creative Direction"],
     videoId: "the-suns-glory"
   },
@@ -188,13 +189,13 @@ export const Projects = () => {
             ))}
           </div>
 
-          {/* Quick instructions on Asset replacement */}
+          {/* Quick instructions on Asset replacement 
           <div className="rounded-2xl bg-[#0e0e0e] p-8 text-center border border-dashed border-white/10 max-w-3xl mx-auto">
             <h4 className="text-sm font-bold text-white uppercase mb-3">Asset Library Folder Structure</h4>
             <p className="text-xs text-gray-500 max-w-xl mx-auto leading-relaxed">
               * Note to Prosper & OGWA Team: All video representations and Unsplash placeholder pictures are high-definition responsive blocks. You can override these structures later with files inside the local <code className="bg-white/5 px-1 rounded font-mono text-[#EBC325] font-semibold">assets/</code> folder to hot-swap assets dynamically.
             </p>
-          </div>
+          </div>*/}
 
         </div>
       </section>
