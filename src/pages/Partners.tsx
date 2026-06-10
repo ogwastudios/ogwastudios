@@ -30,7 +30,7 @@ const partnersGains = [
   }
 ];
 
-import dummyPartnerLogo from '../assets/images/dummy_partner_logo_1781119078742.png';
+import dummyPartnerLogo from '../assets/images/sgs.jpg';
 
 const currentPartners = [
   {
