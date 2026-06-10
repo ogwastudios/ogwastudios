@@ -148,7 +148,7 @@ export const Home = () => {
                     src={work.image} 
                     alt={work.title} 
                     referrerPolicy="no-referrer"
-                    className="w-full h-full object-cover grayscale brightness-90 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500" 
+                    className="w-full h-full object-cover brightness-100 group-hover:scale-105 transition-all duration-500"
                   />
                 </div>
                 <div className="space-y-1">

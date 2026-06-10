@@ -149,7 +149,7 @@ export const Projects = () => {
                       src={project.image} 
                       alt={project.title}
                       referrerPolicy="no-referrer"
-                      className="w-full h-full object-cover grayscale brightness-95 opacity-80 transition-all duration-700 group-hover:scale-102 group-hover:grayscale-0 group-hover:opacity-100"
+                      className="w-full h-full object-cover brightness-100 opacity-100 transition-all duration-700 group-hover:scale-102"
                     />
                     <div className="absolute top-4 left-4 bg-black/80 text-[#EBC325] border border-[#EBC325]/30 px-3 py-1 rounded text-[8px] font-mono tracking-widest uppercase">
                       {project.category}
