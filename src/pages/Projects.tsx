@@ -189,14 +189,14 @@ export const Projects = () => {
             ))}
           </div>
 
-          {/* Quick instructions on Asset replacement */}
+          {/* Quick instructions on Asset replacement 
           <div className="rounded-2xl bg-[#0e0e0e] p-8 text-center border border-dashed border-white/10 max-w-3xl mx-auto">
             <h4 className="text-sm font-bold text-white uppercase mb-3">Asset Library Folder Structure</h4>
             <p className="text-xs text-gray-500 max-w-xl mx-auto leading-relaxed">
               * Note to Prosper & OGWA Team: All video representations and Unsplash placeholder pictures are high-definition responsive blocks. You can override these structures later with files inside the local <code className="bg-white/5 px-1 rounded font-mono text-[#EBC325] font-semibold">assets/</code> folder to hot-swap assets dynamically.
             </p>
-          </div>
-
+          </div> */}
+          
         </div>
       </section>
     </PageTransition>
