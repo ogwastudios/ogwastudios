@@ -51,7 +51,7 @@ export const About = () => {
               </p>
             </div>
             
-            <div className="relative aspect-video rounded-2xl overflow-hidden bg-neutral-950 border border-white/10 group">
+            {/* <div className="relative aspect-video rounded-2xl overflow-hidden bg-neutral-950 border border-white/10 group">
               <img 
                 src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1200" 
                 alt="OGWA Studio Work" 
@@ -59,6 +59,17 @@ export const About = () => {
                 className="w-full h-full object-cover brightness-105 contrast-105" />
               <div className="absolute inset-0 "></div>
             </div>
+          </div> */}
+          
+          <div className="relative aspect-video rounded-2xl overflow-hidden bg-neutral-950 border border-white/10 group">
+            <img 
+              src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1200" 
+              alt="OGWA Studio Work" 
+              referrerPolicy="no-referrer"
+              className="w-full h-full object-cover brightness-95 contrast-105 transition-all duration-500 group-hover:brightness-110 group-hover:scale-105"
+            />
+            {/* Cinematic overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent pointer-events-none"></div>
           </div>
 
           {/* Core Pillars: Guided by Artistic Integrity */}
