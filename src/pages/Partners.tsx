@@ -30,6 +30,36 @@ const partnersGains = [
   }
 ];
 
+import dummyPartnerLogo from '../assets/images/dummy_partner_logo_1781119078742.png';
+
+const currentPartners = [
+  {
+    name: "CREATIVE ALLIANCE",
+    logo: dummyPartnerLogo, // Real dummy asset imported above
+    url: "#"  // Dummy URL to easily edit later
+  },
+  {
+    name: "ULANZI",
+    logo: "", 
+    url: "#"
+  },
+  {
+    name: "WapTv",
+    logo: "", 
+    url: "#"
+  },
+  {
+    name: "Mu Oga Doctor",
+    logo: "", 
+    url: "#"
+  },
+  {
+    name: "Aforevo",
+    logo: "", 
+    url: "#"
+  }
+];
+
 export const Partners = () => {
   return (
     <PageTransition>
@@ -78,6 +108,49 @@ export const Partners = () => {
                     </p>
                   </div>
                 </div>
+              ))}
+            </div>
+          </div>
+ {/* CURRENT PARTNERS LOGO SECTION */}
+          <div className="border-t border-white/10 pt-16 mb-24">
+            <div className="mb-12">
+              <span className="text-[#EBC325] font-mono text-xs font-bold tracking-[0.2em] mb-3 block">ESTABLISHED ALLIANCES</span>
+              <h2 className="text-2xl md:text-3xl font-sans font-light uppercase tracking-tight text-white flex items-center gap-2">
+                <span>OUR CURRENT</span>
+                <span className="font-sans font-light text-[#EBC325]">PARTNERS</span>
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-2 lg:grid-cols-5 gap-6">
+              {currentPartners.map((partner, idx) => (
+                <a
+                  key={idx}
+                  href={partner.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#0e0e0e] hover:bg-[#121212] border border-white/5 hover:border-[#EBC325]/30 rounded-xl overflow-hidden flex flex-col items-center justify-center aspect-[4/3] w-full transition-all duration-300 group relative"
+                >
+                  {partner.logo ? (
+                    <img
+                      src={partner.logo}
+                      alt={partner.name}
+                      referrerPolicy="no-referrer"
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-102"
+                    />
+                  ) : (
+                    <div className="flex flex-col items-center justify-center p-6 text-center">
+                      {/* Straight, high contrast, full color indicators with yellow-amber gradient badge */}
+                      <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-amber-500/20 to-[#EBC325]/30 flex items-center justify-center mb-3.5 border border-[#EBC325]/20 shadow-[0_2px_10px_rgba(235,195,37,0.1)]">
+                        <span className="text-[#EBC325] font-mono text-xs font-extrabold">
+                          0{idx + 1}
+                        </span>
+                      </div>
+                      <span className="text-white text-[10px] font-bold uppercase tracking-widest leading-normal">
+                        {partner.name}
+                      </span>
+                    </div>
+                  )}
+                </a>
               ))}
             </div>
           </div>
