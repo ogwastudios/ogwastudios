@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { PageTransition } from '../components/PageTransition';
 import React from 'react';
-import ogwaHomeImage from '../assets/images/home_mage.jpg';
+import ogwaHomeImage from '../assets/images/home-mage.jpg';
 import rainbowChristmasPoster from '../assets/images/rfc.jpg';
 import sunsglory from '../assets/images/sgs.jpg';
 
