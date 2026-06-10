@@ -1,8 +1,9 @@
 import { PageTransition } from '../components/PageTransition';
 import { Play, Film, Calendar, Compass, Sparkles, Tv, ArrowRight } from 'lucide-react';
 import React, { useState } from 'react';
-import rainbowChristmasPoster from '../assets/images/rainbow_christmas_poster_1781109101391.png';
-import zoeMoviePoster from '../assets/images/zoe_movie_poster_1781109113254.png';
+import ogwaHomeImage from '../assets/images/ogwa_home_mage.jpg';
+import rainbowChristmasPoster from '../assets/images/rfc.jpg';
+import sunsglory from '../assets/images/sgs.jpg';
 
 // Live project parameters based directly on user's spec
 const ogwaProjects = [
@@ -11,7 +12,7 @@ const ogwaProjects = [
     category: "Social Impact Film",
     year: "2025",
     desc: "A film exploring identity, visibility, and the lived realities of people with albinism. Combines high-fidelity cinematography with advocacy to drive inclusion.",
-    image: "https://images.unsplash.com/photo-1492691523567-6170c3295db5?auto=format&fit=crop&q=80&w=1200",
+    image:sunsglory,
     roles: ["Story Development", "Film Production", "Creative Direction"],
     videoId: "the-suns-glory"
   },
