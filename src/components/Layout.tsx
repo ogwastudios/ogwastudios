@@ -113,7 +113,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
             <a href="https://www.linkedin.com/company/ogwastudios" target="_blank" rel="noopener noreferrer" className="hover:text-[#EBC325] transition-colors">LinkedIn</a>
             <a href="https://x.com/ogwastudios?s=20" target="_blank" rel="noopener noreferrer" className="hover:text-[#EBC325] transition-colors">Twitter</a>
           </div>
-          <span>Lagos, Nigeria (Collaborating Globally)</span>
+          <span>Lagos / London / Global</span>
         </div>
       </footer>
     </div>
