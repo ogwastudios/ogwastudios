@@ -57,7 +57,7 @@ export const About = () => {
                 alt="OGWA Studio Work" 
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover brightness-105 contrast-105" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+              <div className="absolute inset-0 "></div>
             </div>
           </div>
 
