@@ -47,7 +47,7 @@ const currentPartners = [
     url: "#"
   },
   {
-    name: "WapTv",
+    name: "cc",
     logo: cc, 
     url: "#"
   },
