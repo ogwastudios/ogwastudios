@@ -50,16 +50,6 @@ export const About = () => {
                 From classic cinema to digital formats, our projects represent lived contemporary cultures with truth, nuance, and objective perspectives. We provide physical/digital platforms, equipment, and access for individuals ready to lead their own stories.
               </p>
             </div>
-            
-            {/* <div className="relative aspect-video rounded-2xl overflow-hidden bg-neutral-950 border border-white/10 group">
-              <img 
-                src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1200" 
-                alt="OGWA Studio Work" 
-                referrerPolicy="no-referrer"
-                className="w-full h-full object-cover brightness-105 contrast-105" />
-              <div className="absolute inset-0 "></div>
-            </div>
-          </div> */}
 
           <div className="relative aspect-video rounded-2xl overflow-hidden bg-neutral-950 border border-white/10 group">
             <img 
