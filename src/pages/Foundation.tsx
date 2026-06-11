@@ -56,7 +56,7 @@ export const Foundation = () => {
                 src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&q=80&w=1200" 
                 alt="OGWA Foundation Community screening" 
                 referrerPolicy="no-referrer"
-                className="w-full h-full object-cover opacity-50 grayscale transition-transform duration-500 group-hover:scale-102 group-hover:grayscale-0 group-hover:opacity-75"
+                className="w-full h-full object-cover brightness-100 opacity-100 transition-all duration-700 group-hover:scale-102"              
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
             </div>
