@@ -55,11 +55,6 @@ const currentPartners = [
     name: "Mu Oga Doctor",
     logo: cep, 
     url: "#"
-  },
-  {
-    name: "Aforevo",
-    logo: "", 
-    url: "#"
   }
 ];
 
