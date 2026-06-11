@@ -35,6 +35,7 @@ import theNollyWoodReporter from '../assets/images/thwr-logo.jpeg';
 import bc from '../assets/images/bc-logo.png';
 import cc from '../assets/images/cc-logo.png';
 import cep from '../assets/images/cep-logo.png';
+import ulanzi from '../assets/images/ulanzi-logo.png';
 const currentPartners = [
   {
     name: "The Nolly Wood Reporter Logo",
@@ -52,8 +53,13 @@ const currentPartners = [
     url: "#"
   },
   {
-    name: "Mu Oga Doctor",
+    name: "Mu Oga Doctor logo",
     logo: cep, 
+    url: "#"
+  },
+   {
+    name: "Ulanzi Logo",
+    logo: ulanzi, 
     url: "#"
   }
 ];
