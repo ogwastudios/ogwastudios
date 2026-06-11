@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import zoeMoviePoster from '../assets/images/ZOE.JPG';
 import rainbowChristmasPoster from '../assets/images/rfc.jpg';
 import sunsglory from '../assets/images/sgs.jpg';
-import svy from '../assets/images/svy.png';
+import svy from '../assets/images/svy.PNG';
 
 // Live project parameters based directly on user's spec
 const ogwaProjects = [

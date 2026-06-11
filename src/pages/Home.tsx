@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { PageTransition } from '../components/PageTransition';
 import React from 'react';
 import ogwaHomeImage from '../assets/images/home-mage.jpg';
-import svy from '../assets/images/svy.png';
+import svy from '../assets/images/svy.PNG';
 import rainbowChristmasPoster from '../assets/images/rfc.jpg';
 import sunsglory from '../assets/images/sgs.jpg';
 
