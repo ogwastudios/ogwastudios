@@ -114,7 +114,8 @@ export const Partners = () => {
               ))}
             </div>
           </div>
- {/* CURRENT PARTNERS LOGO SECTION */}
+          
+          {/* CURRENT PARTNERS LOGO SECTION */}
           <div className="border-t border-white/10 pt-16 mb-24">
             <div className="mb-12">
               <span className="text-[#EBC325] font-mono text-xs font-bold tracking-[0.2em] mb-3 block">ESTABLISHED ALLIANCES</span>
@@ -131,14 +132,18 @@ export const Partners = () => {
                   href={partner.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[#0e0e0e] hover:bg-[#121212] border border-white/5 hover:border-[#EBC325]/30 rounded-xl overflow-hidden flex flex-col items-center justify-center aspect-[4/3] w-full transition-all duration-300 group relative"
+                  className={`border rounded-xl overflow-hidden flex flex-col items-center justify-center aspect-[4/3] w-full transition-all duration-300 group relative ${
+                    partner.logo
+                      ? "bg-white border-neutral-200 p-6 md:p-8"
+                      : "bg-[#0e0e0e] border-white/5 hover:border-[#EBC325]/30"
+                  }`}
                 >
                   {partner.logo ? (
                     <img
                       src={partner.logo}
                       alt={partner.name}
                       referrerPolicy="no-referrer"
-                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-102"
+                      className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
                     />
                   ) : (
                     <div className="flex flex-col items-center justify-center p-6 text-center">
