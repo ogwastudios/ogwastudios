@@ -31,10 +31,10 @@ const partnersGains = [
 ];
 
 
-import theNollyWoodReporter from '../assets/images/thwr-logo.jpg';
+import theNollyWoodReporter from '../assets/images/thwr-logo.jpeg';
 import bc from '../assets/images/bc-logo.png';
-import  from '../assets/images/cc-logo.png';
-import cep from '../assets/images/cep-logo';
+import cc from '../assets/images/cc-logo.png';
+import cep from '../assets/images/cep-logo.png';
 const currentPartners = [
   {
     name: "CREATIVE ALLIANCE",
