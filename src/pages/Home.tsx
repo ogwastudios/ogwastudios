@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { PageTransition } from '../components/PageTransition';
 import React from 'react';
 import ogwaHomeImage from '../assets/images/home-mage.jpg';
-import zoeMoviePoster from '../assets/images/rfc.jpg';
+import svy from '../assets/images/svy.png';
 import rainbowChristmasPoster from '../assets/images/rfc.jpg';
 import sunsglory from '../assets/images/sgs.jpg';
 
@@ -136,7 +136,7 @@ export const Home = () => {
                 title: "SYV Podcast",
                 tag: "Ongoing Audio Series",
                 desc: "Nigeria's pioneering podcast dedicated to conversations around representation, identity, and lived experiences.",
-                image: "https://images.unsplash.com/photo-1485579149621-3123dd979885?auto=format&fit=crop&q=80&w=800"
+                image: svy
               }
             ].map((work, idx) => (
               <div 

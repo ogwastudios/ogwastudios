@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import zoeMoviePoster from '../assets/images/ZOE.JPG';
 import rainbowChristmasPoster from '../assets/images/rfc.jpg';
 import sunsglory from '../assets/images/sgs.jpg';
+import svy from '../assets/images/svy.png';
 
 // Live project parameters based directly on user's spec
 const ogwaProjects = [
@@ -39,7 +40,7 @@ const ogwaProjects = [
     category: "Podcast Series",
     year: "Ongoing",
     desc: "Nigeria's pioneering podcast dedicated to conversations around albinism, representation, identity, and lived experiences.",
-    image: "https://images.unsplash.com/photo-1485579149621-3123dd979885?auto=format&fit=crop&q=80&w=1200",
+    image: svy,
     roles: ["Audio Production", "Narrative Strategy", "Community Engagement"],
     videoId: "syv-podcast"
   }

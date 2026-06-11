@@ -30,27 +30,30 @@ const partnersGains = [
   }
 ];
 
-import dummyPartnerLogo from '../assets/images/sgs.jpg';
 
+import theNollyWoodReporter from '../assets/images/thwr-logo.jpg';
+import bc from '../assets/images/bc-logo.png';
+import  from '../assets/images/cc-logo.png';
+import cep from '../assets/images/cep-logo';
 const currentPartners = [
   {
     name: "CREATIVE ALLIANCE",
-    logo: dummyPartnerLogo, // Real dummy asset imported above
-    url: "#"  // Dummy URL to easily edit later
+    logo: theNollyWoodReporter, 
+    url: "#" 
   },
   {
     name: "ULANZI",
-    logo: "", 
+    logo: bc, 
     url: "#"
   },
   {
     name: "WapTv",
-    logo: "", 
+    logo: cc, 
     url: "#"
   },
   {
     name: "Mu Oga Doctor",
-    logo: "", 
+    logo: cep, 
     url: "#"
   },
   {
