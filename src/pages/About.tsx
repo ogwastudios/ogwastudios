@@ -60,7 +60,7 @@ export const About = () => {
               <div className="absolute inset-0 "></div>
             </div>
           </div> */}
-          
+
           <div className="relative aspect-video rounded-2xl overflow-hidden bg-neutral-950 border border-white/10 group">
             <img 
               src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1200" 
@@ -71,6 +71,7 @@ export const About = () => {
             {/* Cinematic overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent pointer-events-none"></div>
           </div>
+        </div>
 
           {/* Core Pillars: Guided by Artistic Integrity */}
           <div className="border-t border-white/10 pt-20 mb-20">
