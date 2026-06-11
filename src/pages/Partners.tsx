@@ -37,12 +37,12 @@ import cc from '../assets/images/cc-logo.png';
 import cep from '../assets/images/cep-logo.png';
 const currentPartners = [
   {
-    name: "CREATIVE ALLIANCE",
+    name: "The Nolly Wood Reporter Logo",
     logo: theNollyWoodReporter, 
     url: "#" 
   },
   {
-    name: "ULANZI",
+    name: "British Council Logo",
     logo: bc, 
     url: "#"
   },
@@ -114,7 +114,7 @@ export const Partners = () => {
               ))}
             </div>
           </div>
-          
+
           {/* CURRENT PARTNERS LOGO SECTION */}
           <div className="border-t border-white/10 pt-16 mb-24">
             <div className="mb-12">
