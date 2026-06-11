@@ -48,7 +48,7 @@ const currentPartners = [
     url: "#"
   },
   {
-    name: "cc",
+    name: "checkers custard logo",
     logo: cc, 
     url: "#"
   },
