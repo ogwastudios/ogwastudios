@@ -33,7 +33,7 @@ const partnersGains = [
 
 import theNollyWoodReporter from '../assets/images/thwr-logo.jpeg';
 import bc from '../assets/images/bc-logo.png';
-import cc from '../assets/images/cc-Logo.png';
+import cc from '../assets/images/cc-logo.png';
 import cep from '../assets/images/cep-logo.png';
 const currentPartners = [
   {
