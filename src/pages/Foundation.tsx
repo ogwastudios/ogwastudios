@@ -1,7 +1,7 @@
 import { PageTransition } from '../components/PageTransition';
 import { BookOpen, Users, Award, ShieldAlert, Heart, Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
-
+import foundationImg from '../assets/images/foundation.JPG';
 const impactFramework = [
   {
     title: "ADVOCACY & AWARENESS",
@@ -53,7 +53,7 @@ export const Foundation = () => {
             
             <div className="relative aspect-video rounded-2xl overflow-hidden bg-[#0e0e0e] border border-white/5 group">
               <img 
-                src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&q=80&w=1200" 
+                src={foundationImg}
                 alt="OGWA Foundation Community screening" 
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover brightness-100 opacity-100 transition-all duration-700 group-hover:scale-102"              

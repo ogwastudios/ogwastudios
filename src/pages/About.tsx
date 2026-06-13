@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { PageTransition } from '../components/PageTransition';
 import { Eye, Target, Sparkles, Heart, Users, Compass } from 'lucide-react';
-
+import aboutImg from '../assets/images/about.JPG';
 export const About = () => {
   return (
     <PageTransition>
@@ -53,7 +53,7 @@ export const About = () => {
 
           <div className="relative aspect-video rounded-2xl overflow-hidden bg-neutral-950 border border-white/10 group">
             <img 
-              src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1200" 
+              src={aboutImg}
               alt="OGWA Studio Work" 
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover brightness-95 contrast-105 transition-all duration-500 group-hover:brightness-110 group-hover:scale-105"
