@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { PageTransition } from '../components/PageTransition';
 import { Eye, Target, Sparkles, Heart, Users, Compass } from 'lucide-react';
-import aboutImg from '../assets/images/about.JPG';
+import aboutImg from '../assets/images/about.JPEG';
 export const About = () => {
   return (
     <PageTransition>
