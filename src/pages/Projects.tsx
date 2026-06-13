@@ -118,7 +118,7 @@ export const Projects = () => {
                   <iframe 
                     width="100%" 
                     height="100%" 
-                    src="https://www.youtube.com/watch?v=bkJ-jIy6bBk" 
+                    src="https://www.youtube.com/embed/bkJ-jIy6bBk?si=m_cu-jtOwyWoXReP" 
                     title="Teaser Reel" 
                     frameBorder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
