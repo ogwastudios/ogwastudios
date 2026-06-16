@@ -27,26 +27,26 @@ import { ExternalLink, Clock, BookOpen } from 'lucide-react';
 
 const storiesList = [
 {
-title: "ZOE: A story of faith, loss, and the many questions we don't always answer inside OGWA Studios",
+title: "ZOE : A Story of Faith, Loss, and the Questions We Don't Always Answer (Inside OGWA Studios' ZOE) – Rededit Magazine",
 url: "https://rededitmagazine.com/zoe-a-story-of-faith-loss-and-the-questions-we-dont-always-answer-inside-ogwa-studios-zoe/",
-image: "/images/stories/zoe-rededit.jpg",
-desc: "A rich dive into the creative choices behind ZOE, exploring lived grief, faith, representation, and the artistic principles guiding contemporary cinema.",
+image: "https://rededitmagazine.com/wp-content/uploads/2026/04/ZOE-Poster-.jpg",
+desc: "ZOE follows a 15-year-old girl with Sickle Cell Disease, exploring faith, grief, and family during Easter in a story by OGWA Studios.",
 readTime: "5 Min Read",
 tag: "REDEDIT MAGAZINE"
 },
 {
-title: "Beyond the Frame: How Prosper Light and OGWA Studios are Redefining Beauty, Belonging and Bold Storytelling in Nollywood",
+title: "Beyond the Frame: How Prosper Light and OGWA Studios Are Redefining Beauty, Belonging, and Bold Storytelling in Nollywood - Ranks Magazine",
 url: "https://ranksafrica.com/beyond-the-frame-how-prosper-light-and-ogwa-studios-are-redefining-beauty-belonging-and-bold-storytelling-in-nollywood/",
-image: "/images/stories/ranks-africa.jpg",
-desc: "An in-depth profile of visual change makers, unpacking how bold imagery and authentic narratives translate lived truth into high-fidelity Nollywood standards.",
+image: "https://ranksafrica.com/wp-content/uploads/2025/06/IMG_9668-scaled.jpg",
+desc: "At the Heart of Storytelling, There's Prosper Light. Prosper Light is more than a scriptwriter and director—they're one of the most intentional voices reshaping Nollywood today.",
 readTime: "7 Min Read",
 tag: "RANKS AFRICA"
 },
 {
-title: "How Actor Prosper Light Built His Own Table and Invited Others In",
+title: "How actor, Prosper Light, built his own table and invited others in - Businessday NG",
 url: "https://businessday.ng/bd-weekender/article/how-actor-prosper-light-built-his-own-table-and-invited-others-in/",
-image: "/images/stories/businessday-prosper-light.jpg",
-desc: "An exclusive feature on creating collaborative grassroots platforms, securing production access, and driving advocacy work beyond boundaries.",
+image: "https://cdn.businessday.ng/wp-content/uploads/2025/06/hYlgOJxX-IMG_6117.jpeg",
+desc: "That was Prosper Light. Back then, he was showing up for the thrill of the moment, not knowing those simple performances would shape the...",
 readTime: "6 Min Read",
 tag: "BUSINESSDAY"
 }
