@@ -1,28 +1,55 @@
 import { PageTransition } from '../components/PageTransition';
 import { ExternalLink, Clock, BookOpen } from 'lucide-react';
 
+// const storiesList = [
+//   {
+//     title: "ZOE: A story of faith, loss, and the many questions we don't always answer inside OGWA Studios",
+//     url: "https://rededitmagazine.com/zoe-a-story-of-faith-loss-and-the-questions-we-dont-always-answer-inside-ogwa-studios-zoe/",
+//     desc: "A rich dive into the creative choices behind ZOE, exploring lived grief, faith, representation, and the artistic principles guiding contemporary cinema.",
+//     readTime: "5 Min Read",
+//     tag: "REDEDIT MAGAZINE"
+//   },
+//   {
+//     title: "Beyond the Frame: How Prosper Light and OGWA Studios are Redefining Beauty, Belonging and Bold Storytelling in Nollywood",
+//     url: "https://ranksafrica.com/beyond-the-frame-how-prosper-light-and-ogwa-studios-are-redefining-beauty-belonging-and-bold-storytelling-in-nollywood/",
+//     desc: "An in-depth profile of visual change makers, unpacking how bold imagery and authentic narratives translate lived truth into high-fidelity Nollywood standard.",
+//     readTime: "7 Min Read",
+//     tag: "RANKS AFRICA"
+//   },
+//   {
+//     title: "How Actor Prosper Light Built His Own Table and Invited Others In",
+//     url: "https://businessday.ng/bd-weekender/article/how-actor-prosper-light-built-his-own-table-and-invited-others-in/",
+//     desc: "An exclusive feature on creating collaborative grassroots platforms, securing production access, and driving advocacy work beyond boundaries.",
+//     readTime: "6 Min Read",
+//     tag: "BUSINESS DAY"
+//   }
+// ];
+
 const storiesList = [
-  {
-    title: "ZOE: A story of faith, loss, and the many questions we don't always answer inside OGWA Studios",
-    url: "https://rededitmagazine.com/zoe-a-story-of-faith-loss-and-the-questions-we-dont-always-answer-inside-ogwa-studios-zoe/",
-    desc: "A rich dive into the creative choices behind ZOE, exploring lived grief, faith, representation, and the artistic principles guiding contemporary cinema.",
-    readTime: "5 Min Read",
-    tag: "REDEDIT MAGAZINE"
-  },
-  {
-    title: "Beyond the Frame: How Prosper Light and OGWA Studios are Redefining Beauty, Belonging and Bold Storytelling in Nollywood",
-    url: "https://ranksafrica.com/beyond-the-frame-how-prosper-light-and-ogwa-studios-are-redefining-beauty-belonging-and-bold-storytelling-in-nollywood/",
-    desc: "An in-depth profile of visual change makers, unpacking how bold imagery and authentic narratives translate lived truth into high-fidelity Nollywood standard.",
-    readTime: "7 Min Read",
-    tag: "RANKS AFRICA"
-  },
-  {
-    title: "How Actor Prosper Light Built His Own Table and Invited Others In",
-    url: "https://businessday.ng/bd-weekender/article/how-actor-prosper-light-built-his-own-table-and-invited-others-in/",
-    desc: "An exclusive feature on creating collaborative grassroots platforms, securing production access, and driving advocacy work beyond boundaries.",
-    readTime: "6 Min Read",
-    tag: "BUSINESS DAY"
-  }
+{
+title: "ZOE: A story of faith, loss, and the many questions we don't always answer inside OGWA Studios",
+url: "https://rededitmagazine.com/zoe-a-story-of-faith-loss-and-the-questions-we-dont-always-answer-inside-ogwa-studios-zoe/",
+image: "/images/stories/zoe-rededit.jpg",
+desc: "A rich dive into the creative choices behind ZOE, exploring lived grief, faith, representation, and the artistic principles guiding contemporary cinema.",
+readTime: "5 Min Read",
+tag: "REDEDIT MAGAZINE"
+},
+{
+title: "Beyond the Frame: How Prosper Light and OGWA Studios are Redefining Beauty, Belonging and Bold Storytelling in Nollywood",
+url: "https://ranksafrica.com/beyond-the-frame-how-prosper-light-and-ogwa-studios-are-redefining-beauty-belonging-and-bold-storytelling-in-nollywood/",
+image: "/images/stories/ranks-africa.jpg",
+desc: "An in-depth profile of visual change makers, unpacking how bold imagery and authentic narratives translate lived truth into high-fidelity Nollywood standards.",
+readTime: "7 Min Read",
+tag: "RANKS AFRICA"
+},
+{
+title: "How Actor Prosper Light Built His Own Table and Invited Others In",
+url: "https://businessday.ng/bd-weekender/article/how-actor-prosper-light-built-his-own-table-and-invited-others-in/",
+image: "/images/stories/businessday-prosper-light.jpg",
+desc: "An exclusive feature on creating collaborative grassroots platforms, securing production access, and driving advocacy work beyond boundaries.",
+readTime: "6 Min Read",
+tag: "BUSINESSDAY"
+}
 ];
 
 export const Stories = () => {
@@ -49,7 +76,7 @@ export const Stories = () => {
           </div>
 
           {/* Stories Editorial Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             {storiesList.map((story, idx) => (
               <article 
                 key={idx}
@@ -87,7 +114,70 @@ export const Stories = () => {
                 </div>
               </article>
             ))}
-          </div>
+          </div> */}
+
+          {/* Stories Editorial Grid */}
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          {storiesList.map((story, idx) => (
+                  <article
+                    key={idx}
+                    className="group bg-[#0e0e0e] border border-white/5 rounded-2xl overflow-hidden hover:border-[#EBC325]/30 hover:-translate-y-1 transition-all duration-300 flex flex-col text-left"
+                  >
+                    {/* Featured Image */}
+                    <div className="relative overflow-hidden">
+                      <img
+                        src={story.image}
+                        alt={story.title}
+                        className="w-full h-56 object-cover transition-transform duration-700 group-hover:scale-105"
+                      />
+
+                  {/* Gradient Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+
+                  {/* Category Badge */}
+                  <div className="absolute top-4 left-4">
+                    <span className="bg-[#EBC325]/90 text-black px-3 py-1 text-[8px] font-bold tracking-widest uppercase rounded-full">
+                      {story.tag}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Content */}
+                <div className="p-8 flex flex-col flex-grow">
+                  <div className="flex justify-between items-center mb-5">
+                    <span className="text-gray-500 font-mono text-[9px] uppercase tracking-wider flex items-center gap-1">
+                      <Clock className="w-3.5 h-3.5" />
+                      {story.readTime}
+                    </span>
+                  </div>
+
+                  <h3 className="text-base font-bold text-white group-hover:text-[#EBC325] transition-colors leading-snug mb-4">
+                    {story.title}
+                  </h3>
+
+                  <p className="text-xs text-gray-400 leading-relaxed line-clamp-4 flex-grow">
+                    {story.desc}
+                  </p>
+
+                  <div className="border-t border-white/5 pt-6 mt-8">
+                    <a
+                      href={story.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[10px] font-bold uppercase tracking-widest text-[#EBC325] group-hover:text-white transition-colors flex items-center gap-2"
+                    >
+                      Read Full Article
+                      <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+          ))}
+
+        </div>
+
 
           {/* Bottom Callout */}
           <div className="rounded-2xl bg-[#0e0e0e]/55 border border-white/5 p-8 text-center max-w-2xl mx-auto">
