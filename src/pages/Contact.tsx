@@ -3,6 +3,7 @@ import { Mail, MapPin, Phone, Send, Sparkles, Clock, Globe } from 'lucide-react'
 import React, { useState } from 'react';
 
 export const Contact = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
@@ -12,9 +13,34 @@ export const Contact = () => {
     message: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setFormSubmitted(true);
+    setIsSubmitting(true);
+    
+    try {
+      await fetch("https://formsubmit.co/ajax/ogwatvmedia@gmail.com", {
+        method: "POST",
+        headers: { 
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+            name: formData.name,
+            email: formData.email,
+            organization: formData.organization || "N/A",
+            subject: formData.subject,
+            message: formData.message,
+            _subject: `New Inquiry: ${formData.subject} from ${formData.name}`,
+            _template: "table" // Makes the email look nice and structured
+        })
+      });
+      setFormSubmitted(true);
+    } catch (error) {
+      console.error("Error submitting form", error);
+      alert("Failed to send message. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -157,10 +183,11 @@ export const Contact = () => {
 
                   <button 
                     type="submit" 
-                    className="btn-primary w-full py-4 text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-2 cursor-pointer"
+                    disabled={isSubmitting}
+                    className="btn-primary w-full py-4 text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    <span>SUBMIT INQUIRY</span>
-                    <Send className="w-3.5 h-3.5" />
+                    <span>{isSubmitting ? "SENDING..." : "SUBMIT INQUIRY"}</span>
+                    {!isSubmitting && <Send className="w-3.5 h-3.5" />}
                   </button>
                 </form>
               ) : (
