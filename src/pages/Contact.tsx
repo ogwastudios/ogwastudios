@@ -18,7 +18,7 @@ export const Contact = () => {
     setIsSubmitting(true);
     
     try {
-      await fetch("https://formsubmit.co/ajax/ogwatvmedia@gmail.com", {
+      await fetch("https://formsubmit.co/ajax/0938877b784ad0050504f8850c169626", {
         method: "POST",
         headers: { 
             'Content-Type': 'application/json',
