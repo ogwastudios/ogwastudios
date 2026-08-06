@@ -51,7 +51,22 @@ readTime: "6 Min Read",
 tag: "BUSINESSDAY"
 }
 ];
+{
+  title: 'Ebube Nwani, Stephanie Ugbeye on Interpreting the Emotional Weight of "ZOE"',
+  url: "https://thenollywoodreporter.com/news/zoe-cast-reflect-on-embodying-roles-and-challenges/",
+  image: "https://thenollywoodreporter.com/wp-content/uploads/2026/06/2-1-4.webp",
+  desc: "In an exclusive interview with The Nollywood Reporter, lead actors Ebube Nwani and Stephanie Ugbeye reflect on portraying emotionally demanding characters and bringing the realities of grief, love, and sickle cell disease to life in OGWA Studios' short film, ZOE.",
+  readTime: "4 Min Read",
+  tag: "THE NOLLYWOOD REPORTER"
+},
 
+  title: "Durotimi Okutagidi, Adeola Awodein to Star in HIV Awareness Film BI30",
+  url: "https://tribuneonlineng.com/durotimi-okutagidi-adeola-awodein-to-star-in-hiv-awareness-film-bi30/",
+  image: "https://tribuneonlineng.com/wp-content/uploads/2026/08/BI30.jpg",
+  desc: "Nigerian Tribune spotlights BI30, an upcoming OGWA Studios short film that explores HIV awareness through the story of a young man confronting the courage to know his status, starring Durotimi Okutagidi and Adeola Awodein.",
+  readTime: "3 Min Read",
+  tag: "NIGERIAN TRIBUNE"
+},
 export const Stories = () => {
   return (
     <PageTransition>
