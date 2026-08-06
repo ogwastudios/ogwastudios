@@ -44,7 +44,7 @@ const currentPartners = [
     url: "#" 
   },
   {
-    name: "British Council Logo",
+    name: "MY OGA DOCTOR TEST",
     logo: bc, 
     url: "#"
   },
