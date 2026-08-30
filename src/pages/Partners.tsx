@@ -36,31 +36,37 @@ import bc from '../assets/images/bc-logo.png';
 import cc from "../assets/images/cc-logo.png.jpeg";
 import cep from '../assets/images/cep-logo.png';
 import ulanzi from '../assets/images/ulanzi-logo.png';
+import wardc from '../assets/images/wardc-logo.jpg';
 
 const currentPartners = [
   {
     name: "The Nolly Wood Reporter Logo",
-    logo: theNollyWoodReporter, 
-    url: "#" 
+    logo: theNollyWoodReporter,
+    url: "#"
   },
   {
     name: "MY OGA DOCTOR TEST",
-    logo: bc, 
+    logo: bc,
     url: "#"
   },
   {
     name: "checkers custard logo",
-    logo: cc, 
+    logo: cc,
     url: "#"
   },
   {
     name: "Mu Oga Doctor logo",
-    logo: cep, 
+    logo: cep,
     url: "#"
   },
    {
     name: "Ulanzi Logo",
-    logo: ulanzi, 
+    logo: ulanzi,
+    url: "#"
+  },
+  {
+    name: "WARDC Logo",
+    logo: wardc,
     url: "#"
   }
 ];
@@ -73,7 +79,7 @@ export const Partners = () => {
         <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-radial from-[#EBC325]/5 to-transparent pointer-events-none rounded-full blur-3xl"></div>
 
         <div className="container mx-auto px-6 max-w-6xl relative z-10 text-left">
-          
+
           {/* Header Area using complete plane sans-serif display headings */}
           <div className="max-w-4xl mb-20">
             <div className="flex items-center gap-2 mb-6">
@@ -94,10 +100,10 @@ export const Partners = () => {
               <span>WHAT PARTNERS</span>
               <span className="font-sans font-light text-[#EBC325]">GAIN</span>
             </h2>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {partnersGains.map((value, idx) => (
-                <div 
+                <div
                   key={idx}
                   className="bg-[#0e0e0e] p-8 rounded-2xl border border-white/5 flex flex-col justify-between hover:border-[#EBC325]/30 transition-all duration-300"
                 >
@@ -175,7 +181,7 @@ export const Partners = () => {
               <p className="text-gray-400 text-xs md:text-sm leading-relaxed mb-8 max-w-xl">
                 Whether you're a global brand, nonprofit organization, government institution, media platform, or advocacy group, we can help design storytelling initiatives that connect purpose with people.
               </p>
-              
+
               <div className="space-y-4">
                 {[
                   "Transparent partnership agreements",
@@ -197,8 +203,8 @@ export const Partners = () => {
               <p className="text-xs text-gray-400 mb-6 font-mono font-bold selection:bg-[#EBC325] selection:text-black">
                 ogwatvmedia@gmail.com
               </p>
-              
-              <Link 
+
+              <Link
                 to="/contact"
                 className="btn-primary block w-full py-4 text-center text-xs font-bold uppercase tracking-wider"
               >
