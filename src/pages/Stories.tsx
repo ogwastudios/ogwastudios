@@ -13,7 +13,7 @@ const storiesList = [
   {
     title: "Durotimi Okutagidi, Adeola Awodein to Star in HIV Awareness Film BI30",
     url: "https://tribuneonlineng.com/durotimi-okutagidi-adeola-awodein-to-star-in-hiv-awareness-film-bi30/",
-    image: "https://tribuneonlineng.com/wp-content/uploads/2026/08/BI30.jpg",
+    image: "https://tribuneonlineng.com/wp-content/uploads/2026/07/Durotimi-Okutagidi-Adeola-Awodein-to-star-in-HIV-awareness-film-BI30-860x502.jpg",
     desc: "Nigerian Tribune spotlights BI30, an upcoming OGWA Studios short film that explores HIV awareness through the story of a young man confronting the courage to know his status, starring Durotimi Okutagidi and Adeola Awodein.",
     readTime: "3 Min Read",
     tag: "NIGERIAN TRIBUNE"
