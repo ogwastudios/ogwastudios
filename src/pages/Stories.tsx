@@ -80,6 +80,7 @@ export const Stories = () => {
                       <img
                         src={story.image}
                         alt={story.title}
+                        referrerPolicy="no-referrer"
                         className="w-full h-56 object-cover transition-transform duration-700 group-hover:scale-105"
                       />
 
