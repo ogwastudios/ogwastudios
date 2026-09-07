@@ -3,6 +3,14 @@ import { ExternalLink, Clock, BookOpen } from 'lucide-react';
 
 const storiesList = [
   {
+    title: "OGWA Studios Positions TABS 2026 at the Forefront of Africa's Creative Economy",
+    url: "https://crestafrica.com/ogwa-studios-positions-tabs-2026-at-the-forefront-of-africas-creative-economy/",
+    image: "https://e5c6t4vikra.exactdn.com/wp-content/uploads/OGWA-Studios-.jpeg",
+    desc: "Crest Africa reports on the second edition of The Audacity To Be Seen (TABS), OGWA Studios' Lagos masterclass on personal branding, storytelling, and strategic visibility, set for August 21, 2026.",
+    readTime: "5 Min Read",
+    tag: "CREST AFRICA"
+  },
+  {
     title: 'Ebube Nwani, Stephanie Ugbeye on Interpreting the Emotional Weight of "ZOE"',
     url: "https://thenollywoodreporter.com/news/zoe-cast-reflect-on-embodying-roles-and-challenges/",
     image: "https://thenollywoodreporter.com/wp-content/uploads/2026/06/2-1-4.webp",
