@@ -3,6 +3,14 @@ import { ExternalLink, Clock, BookOpen } from 'lucide-react';
 
 const storiesList = [
   {
+    title: "How OGWA Studios Is Using Documentary Storytelling to Remember Women Behind Nigeria's Unsafe Abortion Crisis",
+    url: "https://pmnewsnigeria.com/2026/09/07/how-ogwa-studios-is-using-documentary-storytelling-to-remember-women-behind-nigerias-unsafe-abortion-crisis/",
+    image: "https://cdn.pmnewsnigeria.com/wp-content/uploads/2026/09/DSC_9923.jpg-scaled.jpeg",
+    desc: "P.M. News profiles SHE WAS HERE, a memorial documentary by OGWA Studios and WARDC that centers personal testimony and lived experience to honor women lost to unsafe abortion in Lagos State.",
+    readTime: "6 Min Read",
+    tag: "PM NEWS"
+  },
+  {
     title: "OGWA Studios Positions TABS 2026 at the Forefront of Africa's Creative Economy",
     url: "https://crestafrica.com/ogwa-studios-positions-tabs-2026-at-the-forefront-of-africas-creative-economy/",
     image: "https://e5c6t4vikra.exactdn.com/wp-content/uploads/OGWA-Studios-.jpeg",
