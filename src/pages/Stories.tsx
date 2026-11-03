@@ -1,7 +1,32 @@
 import { PageTransition } from '../components/PageTransition';
 import { ExternalLink, Clock, BookOpen } from 'lucide-react';
+import tabsPoster from '../assets/images/crest-tabs.jpeg';
 
 const storiesList = [
+  {
+    title: "OGWA Studios Turns One, Launches Publishing Arm With “Blue Biro”",
+    url: "https://thenollywoodreporter.com/news/ogwa-studios-turns-one-launches-publishing-arm-blue-biro/",
+    image: "https://i0.wp.com/thenollywoodreporter.com/wp-content/uploads/2026/09/IMG_5585.webp",
+    desc: "OGWA Studios marks its first anniversary by launching OGWA Publishing with founder Prosper Light's second poetry collection, Blue Biro.",
+    readTime: "Feature",
+    tag: "THE NOLLYWOOD REPORTER"
+  },
+  {
+    title: "‘You cannot afford to remain invisible when you have value to offer’ — Prosper Light",
+    url: "https://guardian.ng/news/you-cannot-afford-to-remain-invisible-when-you-have-value-to-offer-prosper-light/",
+    image: "https://cdn.guardian.ng/wp-content/uploads/2026/08/faST3412.webp",
+    desc: "The Founder and Chairman of The Audacity To Be Seen Masterclass, Prosper Light, urges founders, creatives, entrepreneurs and young professionals to take up space and be seen.",
+    readTime: "News",
+    tag: "THE GUARDIAN NIGERIA"
+  },
+  {
+    title: "Prosper Light on Building OGWA Studios Without Investors",
+    url: "https://staypinched.site/read/prosper-light-ogwa-studios-year-two-interview",
+    image: "https://staypinched.site/api/public/img/43a8a03f-16f0-4f93-ac1e-503b97a7a1a2/1791547850484-1005797431.png",
+    desc: "Prosper Light tells PINCHED what OGWA Studios' self-funded first year cost him, why Blue Biro was never the plan, and what year two has to prove.",
+    readTime: "Interview",
+    tag: "PINCHED"
+  },
   {
     title: "How OGWA Studios Is Using Documentary Storytelling to Remember Women Behind Nigeria's Unsafe Abortion Crisis",
     url: "https://pmnewsnigeria.com/2026/09/07/how-ogwa-studios-is-using-documentary-storytelling-to-remember-women-behind-nigerias-unsafe-abortion-crisis/",
@@ -13,7 +38,8 @@ const storiesList = [
   {
     title: "OGWA Studios Positions TABS 2026 at the Forefront of Africa's Creative Economy",
     url: "https://crestafrica.com/ogwa-studios-positions-tabs-2026-at-the-forefront-of-africas-creative-economy/",
-    image: "https://e5c6t4vikra.exactdn.com/wp-content/uploads/OGWA-Studios-.jpeg",
+    image: tabsPoster,
+    position: "object-top",
     desc: "Crest Africa reports on the second edition of The Audacity To Be Seen (TABS), OGWA Studios' Lagos masterclass on personal branding, storytelling, and strategic visibility, set for August 21, 2026.",
     readTime: "5 Min Read",
     tag: "CREST AFRICA"
@@ -97,7 +123,7 @@ export const Stories = () => {
                         src={story.image}
                         alt={story.title}
                         referrerPolicy="no-referrer"
-                        className="w-full h-56 object-cover transition-transform duration-700 group-hover:scale-105"
+                        className={`w-full h-56 object-cover ${story.position ?? "object-center"} transition-transform duration-700 group-hover:scale-105`}
                       />
 
                   {/* Gradient Overlay */}

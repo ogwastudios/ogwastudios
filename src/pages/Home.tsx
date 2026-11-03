@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { PageTransition } from '../components/PageTransition';
 import React from 'react';
-import ogwaHomeImage from '../assets/images/home-mage.jpg';
+import bi30Image from '../assets/images/bi30.jpg';
 import svy from '../assets/images/svy.PNG';
 import rainbowChristmasPoster from '../assets/images/rfc.jpg';
 import sunsglory from '../assets/images/sgs.jpg';
@@ -75,28 +75,37 @@ export const Home = () => {
             <div className="absolute inset-0 w-full h-full">
               {/* Visual Placeholder for high quality film imagery */}
               <img 
-                src={ogwaHomeImage} 
-                alt="OGWA Studios Team Meeting" 
+                src={bi30Image} 
+                alt="BI30: The Courage To Know" 
                 referrerPolicy="no-referrer"
-                className="w-full h-full object-cover opacity-70 transition-transform duration-750 group-hover:scale-[1.01]"
+                className="w-full h-full object-cover opacity-90 transition-transform duration-750 group-hover:scale-[1.01]"
               />
               
               {/* Vintage dark film screening layer */}
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-black/30 flex flex-col justify-between p-6 md:p-10">
                 <div className="flex justify-between items-start">
                   <span className="bg-[#EBC325]/10 text-[#EBC325] border border-[#EBC325]/30 px-3 py-1 font-mono text-[9px] uppercase tracking-widest rounded-xs">
-                    STUDIO SHOWCASE
+                    WORLD AIDS DAY
                   </span>
                   <span className="text-[#EBC325] font-mono text-xs tracking-widest bg-black/60 px-2 py-1 rounded-sm">OGWA STUDIOS</span>
                 </div>
 
                 <div className="text-left max-w-xl mt-auto">
                   <h3 className="text-white text-lg md:text-2xl font-bold uppercase tracking-tight">
-                    OGWA Studios — Storytelling Redefined  
+                    BI30: The Courage To Know
                   </h3>
-                  <p className="text-gray-300 text-xs md:text-sm mt-1 leading-relaxed">
-                    Inside the creative domain of Original Gripping Works of Art. Empowering voices that shift cultures.
+                  <p className="text-gray-300 text-xs md:text-sm mt-1 mb-4 leading-relaxed">
+                    More than a short film, it is a nationwide movement to challenge HIV stigma and spark honest conversations. This World AIDS Day, help us take BI30 to campuses and communities.
                   </p>
+                  <a
+                    href="https://www.oncrowdr.com/explore/c/bi30-the-courage-to-know"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-primary inline-flex items-center gap-3"
+                  >
+                    Support BI30
+                    <ArrowRight className="w-4 h-4" />
+                  </a>
                 </div>
               </div>
             </div>
